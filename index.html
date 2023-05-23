@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <!-- ícone a ser exibido na aba do navegador -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+    <!-- Título da página (aparece na aba do navegador) -->
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com título e subtítulo -->
+    <div>
+        <h1 id="titulo">Cadastro de Pessoa Física</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <!-- Campo de email -->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="cpf"><strong>CPF</strong></label>
+            <input type="cpf" name="cpf" id="cpf" required>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <fieldset>
+                <legend>Com qual gênero você se identifica?</legend>
+                <input type="radio" name="genero" value="masculino"> Masculino <br>
+                <input type="radio" name="genero" value="Feminino"> Feminino <br>
+                <input type="radio" name="genero" value="outro"> Outro
+            </fieldset>
+        </div>
+
+        <!-- Campo de escolaridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="campo">
+            <label for="estado"><strong>Qual o seu Estado?</strong></label>
+            <select id="estado" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Acre (AC) </option>
+                <option>Alagoas (AL) </option>
+                <option>Amapá (AP) </option>
+                <option>Amazonas (AM) </option>
+                <option>Bahia (BA) </option>
+                <option>Ceará (CE) </option>
+                <option>Distrito Federal (DF) </option>
+                <option>Espírito Santo (ES) </option>
+                <option>Goiás (GO) </option>
+                <option>Maranhão (MA) </option>
+                <option>Mato Grosso do Sul (MS) </option>
+                <option>Mato Grosso (MT) </option>
+                <option>Minas Gerais (MG) </option>
+                <option>Pará (PA) </option>
+                <option>Paraíba (PB) </option>
+                <option>Paraná (PR) </option>
+                <option>Pernambuco (PE) </option>
+                <option>Piauí (PI) </option>
+                <option>Rio de Janeiro (RJ) </option>
+                <option>Rio Grande do Norte (RN) </option>
+                <option>Rio Grande do Sul (RS) </option>
+                <option>Rondônia (RO) </option>
+                <option>Roraima (RR) </option>
+                <option>Santa Catarina (SC) </option>
+                <option>São Paulo (SP) </option>
+                <option>Sergipe (SE) </option>
+                <option>Tocantins (TO) </option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label><strong>Selecione sua Escolaridade</strong></label><br><br>
+                <input type="checkbox" id="ef" name="fundamental" value="fundamental">
+                <label for="escolaridade"> Ensino Fundamental</label>
+                <input type="checkbox" id="em" name="medio" value="medio">
+                <label for="escolaridade"> Ensino Médio</label>
+                <input type="checkbox" id="esi" name="superior" value="superior">
+                <label for="escolaridade"> Ensino Superior</label>
+            </div>
+        </fieldset>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais sobre você: </strong></label>
+            <textarea rows="6" style="width: 400px" id="experiencia" name="experiencia"
+                placeholder="Escreva aqui..."></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <div><button class="botao" type="submit" onsubmit="">Concluído</button></div>
+
+    </form>
+
+</body>
+<footer>
+    Desenvolvido por <a href="https://github.com/alissondelima" target="_blank">Alisson de Lima.</a>
+</footer>
+
+</html>
